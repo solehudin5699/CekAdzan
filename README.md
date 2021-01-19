@@ -16,7 +16,7 @@
 
 ## Description
 
-**Cekadzan** is a simple website for checking imsakiyah schedules (imsak, prayer, etc). Uses api from the [API Fathimah Bot](https://fathimah.docs.apiary.io/) and is built with Angular. This web can be added on mobile home screen.
+**Cekadzan** is a simple website for checking imsakiyah schedules (imsak, prayer, etc). Use api from the [API Fathimah Bot](https://fathimah.docs.apiary.io/) and built with Angular. This web can be added on mobile home screen.
 
 ## Features
 
@@ -43,7 +43,7 @@
     <img width="100%" src="./src/assets/Capture.PNG">
 </div>
 
-## Demo Cekdzan
+## Demo Cekadzan
 
 Try Cekadzan Web build version below
 
