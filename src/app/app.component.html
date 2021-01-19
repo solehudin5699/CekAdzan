@@ -1,0 +1,34 @@
+<!-- Toolbar -->
+<div class="container_app">
+  <div class="header_container">
+    <div class="header_logo">
+      <img src="../assets/logo/logo.png" alt="logo Cekadzan" />
+    </div>
+    <div class="header_inputContainer">
+      <div class="input_wrap">
+        <input
+          class="input_search"
+          placeholder="Cari kota atau kabupaten di sini..."
+          [(ngModel)]="data.keyword"
+          (keyup.enter)="goSearch()"
+        />
+        <div class="input_btn" (click)="goSearch()">
+          <mat-icon>search</mat-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="data.result.length > 0 && !data.isLoading">
+    <div class="result" *ngFor="let item of data.result">
+      <app-result [item]="item"></app-result>
+    </div>
+  </div>
+  <div class="empty_result" *ngIf="data.result.length == 0 && data.searchDone">
+    <h3>Pencarian tidak ditemukan...</h3>
+  </div>
+  <div class="loading_container" *ngIf="data.isLoading">
+    <h1>
+      <i class="fa fa-spinner fa-spin fa-2x fa-fw"></i>
+    </h1>
+  </div>
+</div>

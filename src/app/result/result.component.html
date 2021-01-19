@@ -1,0 +1,131 @@
+<style>
+  .result_item {
+    width: 70vw;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border-radius: 15px;
+    background-color: rgb(156, 238, 25);
+    background-image: linear-gradient(to left, #238bf9, #00b4ff, #a8eb12);
+    box-shadow: 0px 4px 20px 6px rgba(63, 45, 45, 0.3);
+    display: flex;
+    flex-direction: row;
+  }
+  .result_placeDate {
+    flex: 0.35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .result_placeDate h1 {
+    color: #ffffff;
+  }
+  .result_placeDate p {
+    text-align: center;
+  }
+  .result_time {
+    flex: 0.4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .result_timeZone {
+    flex: 0.25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: rgb(252, 252, 252);
+  }
+  .result_timeZone > p {
+    text-align: center;
+    font-size: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .table {
+    width: 100%;
+    color: rgb(252, 252, 252);
+  }
+  .table_row {
+    width: 100%;
+  }
+  .table_columnLabel {
+    width: 35%;
+  }
+  .table_columnData {
+    width: 65%;
+  }
+  @media screen and (max-width: 768px) {
+    .result_item {
+      width: 95vw;
+    }
+  }
+</style>
+<div class="result_item">
+  <div class="result_placeDate">
+    <h1 *ngIf="data.isLoading">
+      <i class="fa fa-spinner fa-spin fa-2x fa-fw"></i>
+    </h1>
+    <p>{{ data.result.kotaOrKab }}</p>
+    <p>{{ data.result.tanggal }}</p>
+  </div>
+  <div class="result_time">
+    <table class="table">
+      <tr class="table_row">
+        <td class="table_columnLabel">Imsak</td>
+        <td class="table_columnData">
+          <p>{{ data.result.imsak }}</p>
+        </td>
+      </tr>
+      <tr>
+        <td>Subuh</td>
+        <td>
+          <p>{{ data.result.subuh }}</p>
+        </td>
+      </tr>
+      <tr>
+        <td>Terbit</td>
+        <td>
+          <p>{{ data.result.terbit }}</p>
+        </td>
+      </tr>
+      <tr>
+        <td>Dhuha</td>
+        <td>
+          <p>{{ data.result.dhuha }}</p>
+        </td>
+      </tr>
+      <tr>
+        <td>Dzuhur</td>
+        <td>
+          <p>{{ data.result.dzuhur }}</p>
+        </td>
+      </tr>
+      <tr>
+        <td>Ashar</td>
+        <td>
+          <p>{{ data.result.ashar }}</p>
+        </td>
+      </tr>
+      <tr>
+        <td>Maghrib</td>
+        <td>
+          <p>{{ data.result.maghrib }}</p>
+        </td>
+      </tr>
+      <tr>
+        <td>Isya</td>
+        <td>
+          <p>{{ data.result.isya }}</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="result_timeZone">
+    <p>Waktu setempat (WIB, WITA, atau WIT)</p>
+  </div>
+</div>
