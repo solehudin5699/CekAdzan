@@ -43,9 +43,9 @@
     <img width="100%" src="./src/assets/Capture.PNG">
 </div>
 <div align="center">
-    <img width="33.33333%" src="./src/assets/ss1.jpeg">
-    <img width="33.33333%" src="./src/assets/ss2.jpeg">
-    <img width="33.33333%" src="./src/assets/ss3.jpeg">
+    <img width="30%" src="./src/assets/ss1.jpeg">
+    <img width="30%" src="./src/assets/ss2.jpeg">
+    <img width="30%" src="./src/assets/ss3.jpeg">
 </div>
 
 ## Demo Cekadzan
