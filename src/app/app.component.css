@@ -52,7 +52,7 @@
 }
 .input_search::placeholder {
   font-size: 15px;
-  color: rgba(0, 119, 255, 0.7);
+  color: #00b4ff;
   font-weight: 500;
 }
 .input_btn {
@@ -60,12 +60,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 119, 255, 0.3);
+  background-color: #00b4ff;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   min-width: 45px;
   cursor: pointer;
   color: white;
+  border: 1px solid rgba(255, 255, 255, 0.7);
 }
 .result {
   display: flex;
